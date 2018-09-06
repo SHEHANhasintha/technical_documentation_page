@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>c++</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  <meta charset="UTF-8">
+  <meta name="description" content="C++ Documentation">
+  <meta name="keywords" content="C++,Documentation,Introduction">
+  <meta name="author" content="Shehan Hasintha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+
+
+</style>
+
+</head>
+<body>
+<main id="main-doc">
+<nav id="navbar"><header>C++ Documentation</header>
+	<a class="nav-link" href="#Introduction">Introduction</a>
+	<a class="nav-link" href="#C++ Compilers">C++ Compilers</a>
+	<a class="nav-link" href="#Linker">Linker</a>
+	<a class="nav-link" href="#MainFunction">MainFunction</a>
+	<a class="nav-link" href="#Comments">Comments</a>
+	<a class="nav-link" href="#Variables">Variables</a>
+	<a class="nav-link" href="#Functions">Functions</a>
+	<a class="nav-link" href="#Header File">Header File</a>
+	<a class="nav-link" href="#Debuging">Debuging</a>
+	<a class="nav-link" href="#Conditions">Conditions</a>
+	<a class="nav-link" href="#Loops">Loops</a>
+</nav>
+
+  
+<div class="body">
+<section class="main-section" id="Introduction" ><header><a name="Introduction">Introduction to C++(What is C++)</a></header><article>
+	
+C++ is a programming language that allows you to tell the commands to the computer what to do? C++ use some internal and external programs(accoding to your prefferenes) specificly to understand the code that you've written in English mixed mathematical language.
+<br>
+<h2>what are those programmes?</h2>
+<ul>
+	<li>Compiler</li>
+	<li>Linker</li>
+</ul>
+<h2>What is Compiler?</h2>
+<br>
+computer is actually a machine that runs on the top of a binary based artchecture.Basicly computer uses Electrical Swiches to do every thing. So if you think about a swhich, where it has only two positions choose from(Turn ON and Turn OFF or another words Zero or One). These are the two different states that computer uses to represent and manupulate every thing.(Ex: English letter A is eqalent to 1000001.).Then if you use a program that translate our code into machine code, then you can make it work via computer. Thant is what we called a Compiler.
+<br>
+<h2>What is Linker?</h2>
+<br>
+you have to use some kind of a text editor to write codes on the computer.(Ex: Visual studio,sublime text, code blocks, Eclipse or even Notepad). once you got one of those and srart writting codes, you will see that you can't just consist with one single file that carries whole program or you will probberbley have to import som einportant componts like API and meny others. And at that point you are going to have to have meny files connected each other. By the way when you start to run the program those programs will come together and make a single file where you have all the code in a sigle file. The program what this machanism does is the program what we called Linker.How ever the text editor you use can change the features you will get when you are writting your programs.
+
+
+</article></section>
+<section class="main-section" id="C++ Compilers" ><header><a name="C++ Compilersr">C++ Compilers</a></header>
+<article>There are few choices you can use to compile c++
+<br>
+
+<ul>
+<li> <i class="fas fa-paperclip"><a href="https://gcc.gnu.org/">gcc</a></i></li>
+<li><i class="fas fa-paperclip"><a href="https://software.intel.com/en-us/c-compilers">Intel C++ Compiler</a></i> </li>
+<li><i class="fas fa-paperclip"><a href="https://www.oracle.com/tools/developerstudio/index.html">Oracle Developer Studio</a></i></li>
+<li><i class="fas fa-paperclip"><a href="http://www.mingw.org/">MinGW</a></i></li>
+<li><i class="fas fa-paperclip"><a href="https://clang.llvm.org/">LCC (compiler)</a></i></li>
+</ul>
+
+Once you download one of these you can install that to your comouter(you can use either documentation or any youtube video to help you with the instalation process.).Notice that each one of those compilers has their own pros and cons.
+<br>
+<h2>How does the compiler convert your source code into a machine readble code?</h2>
+
+the compiler actually runs some tasks before it gets to a point where machine starts reading the code.This is a step wice process.
+
+<ul type="1">
+	<li>Lexical Analysis</li>
+	<li>Syntax Analysis</li>
+	<li>Semantic Analysis</li>
+	<li>IR Generation</li>
+	<li>IR Optimization</li>
+	<li>Optimization</li>
+</ul>
+
+<a href="https://www.tutorialspoint.com/compiler_design/index.htm">Find more about compiling procedure</a>
+
+</article>
+</section>
+<section class="main-section" id="Linker" ><header><a name="Linker">Linker</a></header>
+	<article>
+		<h2>more difinition</h2>
+		In computing, a linker or link editor is a computer utility program that takes one or more object files generated by a compiler and combines them into a single executable file, library file, or another 'object' file.
+
+			<h3>What is a linker and loader?</h3>
+A linker combines one or more object files and possible some library code into either some executable, some library or a list of error messages. A loader reads the executable code into memory, does some address translation and tries to run the program resulting in a running program or an error message (or both).
+		
+	</article>
+</section>
+<section class="main-section" id="MainFunction" ><header><a name="MainFunction">MainFunction</a></header><article>
+	<code>
+	main(){<br>
+	//You can write your main codes in here.<br>
+
+}
+</code>
+Usually function require to notify the return statement. But this one is a special case where you don't need to define. A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions. You can divide up your code into separate functions.
+</article>
+</section>
+<section class="main-section" id="Comments" ><header><a name="Comments">Comments</a></header>
+	<article>Comment is not a regular code. comments are usefull when it comes building the project. Building big time project is a crucial work to do.Developers build projects sharing codes each other. usually projects are going to a vertion control system. There are many chances the developer might miss things with out even noticing or spend a lot of time without even undestanding what this peace of code does.So commenting is what handle all of this issues. Developers usually put comments saying what this code does and what he/she is coding(what is this all about.)
+	<ul>There are two types os comments exists.
+		<li>1.single line comment</li>
+		<li>2.Multi line comment</li>
+	</ul>
+	<code>
+		//This is a single line comment<br>
+		/*This is a<br>
+		Multi line <br>
+		comment*/
+
+	</code>
+	Notice that comments doesn't effect to the compile time. just because it gets removed by compiler.
+</article></section>
+<section class="main-section" id="Variables" ><header><a name="Variables">Variables</a></header>
+	<article>
+		Every programming language has their own variables decleration methods. C++ also has it's own variable decleration methods.
+		There few variable types exist in c++
+		<h3><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+		Start writing this codes under the main function if you a absolute beginner.
+		</h3>
+		<h3>Integers<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></h3>
+		<code>
+				int a = +123456789012345;<br>
+				short int b = -123456789012345;<br>
+				unsigned short int = 123456789012345;<br>
+				int b = -123456789012345;<br>
+				unsigned int = 123456789012345;<br>
+				long int = +12345678901234567890123456789012;<br>
+				unsigned long int = 12345678901234567890123456789012;<br>
+				long long int = +1234567890123456789012345678901212345678901234567890123456789012;<br>
+				unsigned long long int = 1234567890123456789012345678901212345678901234567890123456789012;<br>
+
+		</code>
+		Keyword used for integer data types is int. Integers typically requires 4 bytes of memory space and ranges from -2147483648 to 2147483647. 
+			<h3> Character.</h3>
+			Character data type is used for storing characters. Keyword used for character data type is char. Characters typically requires 1 byte of memory space and ranges from -128 to 127 or 0 to 255.
+			<code>
+				char a ='Exactly one byte in size. At least 8 bits.';<br>
+				char16_t a ='Not smaller than char. At least 16 bits.';<br>
+				char32_t a ='Not smaller than char16_t. At least 32 bits.';<br>
+				wchar_t a ='Can represent the largest supported character set';<br>
+			</code>
+			<h3>Boolean.</h3>
+			The boolean type, known in C++ as bool, can only represent one of two states, true or false.
+			<code>
+				bool a = true;<br>
+				bool b = false;<br>
+			</code>
+			<h3>Floating Point and Double Floating Point.</h3>
+			They can represent real values, such as 3.14 or 0.01, with different levels of precision, depending on which of the three floating-point types is used.
+			<code>
+				float a = 1.5;<br>
+				//Precision not less than float<br>
+				double a =	6.357;<br>
+				//Precision not less than double<br>
+				long double a =	1.3459;<br>
+			</code>
+			<h3>Valueless or Void.</h3>
+			void (C++) The latest version of this topic can be found at void (C++). When used as a function return type, the void keyword specifies that the function does not return a value. When used for a function's parameter list, void specifies that the function takes no parameters.
+
+			<h3>What is the void in C++?</h3>
+In computer programming, when void is used as a function return type, it indicates that the function does not return a value. When void appears in a pointer declaration, it specifies that the pointer is universal. When used in a function's parameter list, void indicates that the function takes no parameters.
+			
+			<h3>What is the use of void data type?</h3>
+The data type void actually refers to an object that does not have a value of any type. We have already seen examples of its use when we have defined functions that return no value, i.e. functions which only print a message and have no value to return. Such a function is used for its side effect and not for its value.
+
+<h3>What is the size of void data type?</h3>
+On a 32-bit arch, sizeof(void *) is 4 bytes, so p++, would be set accordingly.The amount by which a pointer is incremented is dependent on the data it is pointing to. So, it will be increased by 1 byte.
+			<code>// void.cpp  <br>
+void vobject;   // C2182 <br> 
+void *pv;   // okay  <br>
+int *pint; int i; <br> 
+int main() {  <br>
+   pv = &i;  <br>
+   // Cast optional in C required in C++ <br> 
+   pint = (int *)pv;  <br>
+}   
+</code>
+
+<i class="fas fa-paperclip"><a href="https://en.cppreference.com/w/cpp/language/types"> More info</a></i>
+	</article>	
+</section>
+
+<section class="main-section" id="Functions" ><header><a name="Functions">Functions</a></header>
+<article>
+Function are some thing that takes inputs and generating outputs. This could be either returning or doing some tasks. A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function. The C++ standard library provides numerous built-in functions that your program can call.
+
+<h4>There are few things to discuss about functions in c++</h4><br>
+1. What a basic function looks like<br>
+2. What are function pointers<br>
+3. Virtual functions<br>
+
+<code>
+	//print hello world basic funtion<br>
+	int void helloWorld(){<br>
+		std::cout << "Hello World" << std::endl;<br>
+	}<br>
+
+		//add two words together<br>
+	int void myName(firstname,secondname){<br>
+		std::cout << firstname,secondname << std::endl;<br>
+	}<br>
+
+			//return statment<br>
+	int squre(num){<br>
+		return num*num<br>
+	}<br>
+
+	addWords("","");<br>
+
+	helloWorld();<br>
+	myName(Shehan,hasintha);<br>
+	std::cout<< squre(39) << std::endl;<br>
+
+	<code>
+		>>Hello World<br>
+		>>Shehan Hasintha<br>
+		>>1521
+	</code>
+</code>
+
+<i class="fas fa-badge-check"></i> You can generally use functions if you do some task over and over again. It's actually prevent if you've been repeating the samething again and again.
+<br>
+<h3>What are function pointers?</h3>
+Pointers to member functions in C++ This is how C++ uses function pointers when dealing with member functions of classes or structs. These are invoked using an object pointer or a this call. They are type safe in that you can only call members of that class (or derivatives) using a pointer of that type.
+
+<h3>What is use of function pointer?</h3>
+Function pointers can be useful when you want to create callback mechanism, and need to pass address of an function to another function. They can also be useful when you want to store an array of functions, to call dynamically for example. One common use is to implement a callback function.
+
+<a href="http://www.cplusplus.com/doc/tutorial/functions/"> More info.</a>
+</article>
+</section>
+
+<section class="main-section" id="Header File" ><header><a name="Header File">Header File</a></header>
+
+	<article>
+		Header files contain definitions of Functions and Variables, which is imported or used into any C++ program by using the pre-processor #include statement. Header file have an extension ".h" which contains C++ function declaration and macro definition.
+<h3>Why header files are used?</h3>
+A header file is generally used to define all of the functions, variables and constants contained in any function library that you might want to use. The header file stdio.h should be used if you want to use the two standard I/O functions printf and scanf.
+
+<h3>How many header files are available in C++?</h3>
+Originally Answered: How many header files does C++ have? There are a total of 49 header files in the Standard C++ Library. This includes equivalents of the 19 Standard C Library header files. All of the equivalent C header files have a 'c' prepended to the name and have no .h file extension.
+	<code>
+		#include &lt;iostream>;<br>
+	</code>
+A header file is generally used to define all of the functions, variables and constants contained in any function library that you might want to use. The header file stdio.h should be used if you want to use the two standard I/O functions printf and scanf.</article></section>
+
+<section class="main-section" id="Debuging" ><header><a name="Debuging">Debuging</a></header><article>When you write your programs, you get bugs in various kinds. And all of those bugs are all on you. you can't blame the computer what so ever. Bugs can be occour in two ways.
+<ul>
+	<li>1.your solution is wrong.</li>
+	<li>2.you have made a syntex error.</li>
+</ul>
+And one of those happens all the time.<br>
+
+<a href="https://www.toptal.com/c-plus-plus/interview-questions#form">
+	<i class="fas fa-graduation-cap"></i> 24 essential c++ debugging questions
+</a>
+Although you can easyly use a debugging tool.<br>
+<ul>
+	<li><i class="fas fa-wrench"></i><a href="https://www.gnu.org/software/gdb/">GNU Debugger</a></li>
+	<li><i class="fas fa-wrench"></i><a href="http://valgrind.org/">Valgrind</a></li>
+	<li><i class="fas fa-wrench"></i><a href="https://sourceforge.net/projects/ddd/">Data Display Debugger</a></li>
+</ul>
+</article></section>
+
+
+<section class="main-section" id="Conditions" ><header><a name="Conditions">Conditions</a></header><article>
+	<h3>What is if statement in C++?</h3>
+By Alex Allain. The ability to control the flow of your program, letting it make decisions on what code to execute, is valuable to the programmer. The if statement allows you to control if a program enters a section of code or not based on whether a given condition is true or false.
+<code>
+	#include &li;iostream>
+	//simple if condition<br>
+	if (expresstion === 1){<br>
+		//do anything<br>
+	};
+	<br>
+
+
+//example 2
+using namespace std;<br>
+<br>
+int main() <br>
+{<br>
+    int number;<br>
+    cout << "Enter an integer: ";<br>
+    cin >> number;<br>
+
+    // checks if the number is positive<br>
+    if ( number > 0) <br>
+    {<br>
+        cout << "You entered a positive integer: " << number << endl;<br>
+    }<br>
+<br>
+    cout << "This statement is always executed.";<br>
+    return 0;<br>
+
+}<br>
+
+</code>
+<br>
+<i class="fas fa-paperclip">
+<a href="https://www.programiz.com/cpp-programming/if-else">More info</a></i><br>
+<h3>What is not equal to in C++?</h3>
+The equality operators, equal to ( == ) and not equal to ( != ), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is bool . ... The not-equal-to operator ( != ) returns true if the operands do not have the same value; otherwise, it returns false.
+<code>
+	if (expresstion != 1){<br>
+		//do anything<br>
+	};<br>
+</code>
+
+</article></section>
+<section class="main-section" id="Loops" ><header><a name="Loops">Loops
+</a></header><article>
+	C++ Loop Types. There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+
+<code>
+	//simple for loop<br>
+	int main(){<br>
+	for (;;){<br>
+		printf("This is a infinit loop.");<br>
+}<br>
+
+//you can add conditions to a for-loop where you can add limitations.<br>
+for (int i;i&lt;10;i++){<br>
+	//The loop runs 10 times. <br>
+}<br>
+}<br>
+<br>
+
+</code>
+
+</article>
+</section>
+
+</div>
+
+
+</main>
+</body>
+</html>
